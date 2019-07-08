@@ -4,11 +4,11 @@ Week 4 Exercises
 
 # Completed
 
-1. [Exercises 1](../exercise-1.js) Angka Prima
-2. [Exercises 2](../exercise-2.js) Faktor Persekutuan Terbesar
-3. [Exercises 3](../exercise-3.js) Cari Median
-4. [Exercises 4](../exercise-4.js) Cari Modus
-5. [Exercises 5](../exercise-5.js) Ubah Huruf
+1. [Exercises 1](../master/exercise-1.js) Angka Prima
+2. [Exercises 2](../master/exercise-2.js) Faktor Persekutuan Terbesar
+3. [Exercises 3](../master/exercise-3.js) Cari Median
+4. [Exercises 4](../master/exercise-4.js) Cari Modus
+5. [Exercises 5](../master/exercise-5.js) Ubah Huruf
 
 # WIP
 
