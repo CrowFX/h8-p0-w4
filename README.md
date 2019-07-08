@@ -8,7 +8,6 @@ Week 4 Exercises
 2. [Exercises 2] Faktor Persekutuan Terbesar
 3. [Exercises 3] Cari Median
 
-
 # WIP
 
 4. [Exercises 4] Cari Modus
