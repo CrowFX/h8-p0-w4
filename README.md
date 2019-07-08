@@ -6,14 +6,15 @@ Week 4 Exercises
 
 1. [Exercises 1] Angka Prima
 2. [Exercises 2] Faktor Persekutuan Terbesar
+3. [Exercises 3] Cari Median
+
 
 # WIP
 
-3. [Exercises 3] Cari Median
+4. [Exercises 4] Cari Modus
 
 # Future Works
 
-4. [Exercises 4] Cari Modus
 5. [Exercises 5] Ubah Huruf
 6. [Exercises 6] Digit Perkalian Minimum
 7. [Exercises 7] Urutkan Abjad
