@@ -11,14 +11,15 @@ Week 4 Exercises
 5. [Exercises 5](../master/exercise-5.js) Ubah Huruf
 6. [Exercises 6](../master/exercise-6.js) Digit Perkalian Minimum
 7. [Exercises 7](../master/exercise-7.js) Urutkan Abjad
+8. [Exercises 8](../master/exercise-8.js) Tukar Ukuran
+
 
 # WIP
 
-8. [Exercises 8] Tukar Ukuran
+9. [Exercises 9] Cek AB
 
 # Future Works
 
-9. [Exercises 9] Cek AB
 10. [Exercises 10] Change me
 11. [Exercises 11] Shopping Time!
 12. [Exercises 12] Toko X
