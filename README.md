@@ -12,15 +12,14 @@ Week 4 Exercises
 6. [Exercises 6](../master/exercise-6.js) Digit Perkalian Minimum
 7. [Exercises 7](../master/exercise-7.js) Urutkan Abjad
 8. [Exercises 8](../master/exercise-8.js) Tukar Ukuran
-
+10. [Exercises 10](../master/exercise-10.js) Change me
 
 # WIP
 
-9. [Exercises 9] Cek AB
+9. [Exercises 9](../master/exercise-9.js) Cek AB
 
 # Future Works
 
-10. [Exercises 10] Change me
 11. [Exercises 11] Shopping Time!
 12. [Exercises 12] Toko X
 13. [Exercises 13] Deep Sum
