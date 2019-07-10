@@ -13,14 +13,15 @@ Week 4 Exercises
 7. [Exercises 7](../master/exercise-7.js) Urutkan Abjad
 8. [Exercises 8](../master/exercise-8.js) Tukar Ukuran
 10. [Exercises 10](../master/exercise-10.js) Change me
+11. [Exercises 11](../master/exercise-11.js) Shopping Time!
+
 
 # WIP
 
-9. [Exercises 9](../master/exercise-9.js) Cek AB
+9. [Exercises 9](../master/exercise-9.js) Cek AB (Still FAIL!)
 
 # Future Works
 
-11. [Exercises 11] Shopping Time!
 12. [Exercises 12] Toko X
 13. [Exercises 13] Deep Sum
 14. [Exercises 14] Naik Angkot
