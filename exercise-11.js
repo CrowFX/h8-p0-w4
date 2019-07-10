@@ -40,8 +40,8 @@ function shoppingTime(memberId, money) {
         listPurchased: purchase,
         changeMoney: moneyChange
     }
-    if (placeHolder.memberId == '' || (placeHolder.memberId || placeHolder.money) === undefined) {return '"Mohon maaf, toko X hanya berlaku untuk member saja"'};
-    if (placeHolder.money < shopList[shopList.length - 1][1]) {return '"Mohon maaf, uang tidak cukup"'};
+    if (placeHolder.memberId == '' || placeHolder.memberId === undefined) {return '"Mohon maaf, toko X hanya berlaku untuk member saja"'};
+    if (placeHolder.money < shopList[shopList.length - 1][1] || placeHolder.money === undefined) {return '"Mohon maaf, uang tidak cukup"'};
     for (let i = 0; i < shopList.length; i++) {
         if (placeHolder.money >= shopList[i][1]) {
             purchase.push([shopList[i][0]]);

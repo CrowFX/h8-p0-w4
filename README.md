@@ -14,7 +14,7 @@ Week 4 Exercises
 8. [Exercises 8](../master/exercise-8.js) Tukar Ukuran
 10. [Exercises 10](../master/exercise-10.js) Change me
 11. [Exercises 11](../master/exercise-11.js) Shopping Time!
-
+12. [Exercises 12](../master/exercise-12.js) Toko X
 
 # WIP
 
@@ -22,7 +22,6 @@ Week 4 Exercises
 
 # Future Works
 
-12. [Exercises 12] Toko X
 13. [Exercises 13] Deep Sum
 14. [Exercises 14] Naik Angkot
 15. [Exercises 15] Highest Score
