@@ -1,9 +1,8 @@
-function highestScore(students) {
+function graduates(students) {
     if (students.length === 0) {return {};}
     let result = {};
     let placeHolder = {};
     let classList = [];
-    let scoreList = [];
     for (let i = 0; i < students.length; i++) { //Gathering all classes list
         classList.push(students[i].class)
     }
@@ -14,28 +13,19 @@ function highestScore(students) {
         }
     }
     for (let i = 0; i < classList.length; i++) {     //Iterate to the length of classList
-        result[classList[i]] = [];                   //List all available classes
-        placeHolder = {};//Reset placeholder for every class
-        scoreList = [];
-        for (let j = 0; j < students.length; j++) { //generate scoreList
-            if (students[j].class === classList[i]) {
-                scoreList.push(students[j].score);
-            }
-        }
-        scoreList.sort(function sorting(a,b) {return b-a}); //get highest score to first index
-        for (let j = 0; j < students.length; j++) { //compare first index to all students in current class
-            if (scoreList[0] === students[j].score) {
+        result[classList[i]] = [];                   //List all classes
+        for (let j = 0; j < students.length; j++) {  //Iterate to all students available
+            placeHolder = {};                        //Reset placeholder every loop
+            if (students[j].score > 75 && classList[i] === students[j].class) { //fill the content of class
                 placeHolder.name = students[j].name;
                 placeHolder.score = students[j].score;
-                result[classList[i]].push(placeHolder);                            
+                result[classList[i]].push(placeHolder)
             }
         }
     }
     return result;
 }
-
-// TEST CASE
-console.log(highestScore([{
+console.log(graduates([{
         name: 'Dimitri',
         score: 90,
         class: 'foxes'
@@ -58,12 +48,16 @@ console.log(highestScore([{
 ]));
 
 // {
-//   foxes: { name: 'Dimitri', score: 90 },
-//   wolves: { name: 'Alexei', score: 85 }
+//   foxes: [
+//     { name: 'Dimitri', score: 90 }
+//   ],
+//   wolves: [
+//     { name: 'Alexei' , score: 85 },
+//     { name: 'Anastasia', score: 78 }
+//   ]
 // }
 
-
-console.log(highestScore([{
+console.log(graduates([{
         name: 'Alexander',
         score: 100,
         class: 'foxes'
@@ -91,10 +85,17 @@ console.log(highestScore([{
 ]));
 
 // {
-//   foxes: { name: 'Alexander', score: 100 },
-//   wolves: { name: 'Alisa', score: 76 },
-//   tigers: { name: 'Viktor', score: 80 }
+//   foxes: [
+//     { name: 'Alexander', score: 100 },
+//     { name: 'Vladimir', score: 92 }
+//   ],
+//   wolves: [
+//     { name: 'Alisa', score: 76 },
+//   ],
+//   tigers: [
+//     { name: 'Viktor', score: 80 }
+//   ]
 // }
 
 
-console.log(highestScore([])); //{}
+console.log(graduates([])); //{}
