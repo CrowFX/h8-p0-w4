@@ -10,7 +10,7 @@ function countProfit(shoppers) {
     let totalBuy = 0;
     let temp = 0;;
     for (let i = 0; i < listBarang.length; i++) {
-        placeHolder = new Object();
+        placeHolder = {};
         placeHolder.product = listBarang[i][0];
         placeHolder.shoppers = [];
         placeHolder.leftOver = listBarang[i][2];
