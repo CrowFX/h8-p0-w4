@@ -16,13 +16,13 @@ Week 4 Exercises
 10. [Exercises 10](../master/exercise-10.js) Change me
 11. [Exercises 11](../master/exercise-11.js) Shopping Time!
 12. [Exercises 12](../master/exercise-12.js) Toko X
+13. [Exercises 13](../master/exercise-13.js) Deep Sum
 
 # WIP
 
-13. [Exercises 13] Deep Sum
+14. [Exercises 14] Naik Angkot
 
 # Future Works
 
-14. [Exercises 14] Naik Angkot
 15. [Exercises 15] Highest Score
 16. [Exercises 16] Graduates
