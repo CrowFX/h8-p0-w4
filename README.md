@@ -18,11 +18,12 @@ Week 4 Exercises
 12. [Exercises 12](../master/exercise-12.js) Toko X
 13. [Exercises 13](../master/exercise-13.js) Deep Sum
 14. [Exercises 14](../master/exercise-14.js) Naik Angkot
+15. [Exercises 15](../master/exercise-15.js) Highest Score
 16. [Exercises 16](../master/exercise-16.js) Graduates
 
 # WIP
 
-15. [Exercises 15](../master/exercise-15.js) Highest Score
+Done :)
 
 # Future Works
 
