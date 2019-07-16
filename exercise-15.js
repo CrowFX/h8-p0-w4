@@ -41,7 +41,10 @@ function highestScore(students) {
                 result[classList[i]].push(placeHolder);                            
             }
         }
-        result[classList[i]] = result[classList[i]][0];
+        // Return as Array if there's two or higher students with highest scores
+        if (result[classList[i]].length === 1) {
+            result[classList[i]] = result[classList[i]][0];
+        }
     }
     return result;
 }
