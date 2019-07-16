@@ -12,8 +12,21 @@ function fpb(angka1, angka2) {
         }
     }
     if (isPrimeOne === false && isPrimeTwo === false) {
-        if (angka1 > angka2) {return angka1 % angka2;} else {return angka2 % angka1}
-    } else {return 1;}
+        if (angka2 % angka1 === 0 || angka1 % angka2 === 0) {
+            if (angka1 > angka2) {
+                return angka2;
+            } else {
+                return angka1
+            }
+        }
+        if (angka1 > angka2) {
+            return angka1 % angka2;
+        } else {
+            return angka2 % angka1
+        }
+    } else {
+        return 1;
+    }
 }
 
 // TEST CASES
