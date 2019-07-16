@@ -1,10 +1,9 @@
 function cariMedian(arr) {
-    let floor;
-    floor = Math.floor(arr.length / 2);
+    const mid = Math.floor(arr.length / 2);
     if (arr.length % 2 !== 0) {
-        return arr[floor];
+        return arr[mid];
     } else {
-        return (arr[floor-1] + arr[floor]) / 2;
+        return (arr[mid-1] + arr[mid]) / 2;
     }
 }
 

@@ -1,4 +1,5 @@
 function changeMe(arr) {
+    if (arr.length === 0) {return "";}
     let b = {};
     let year = new Date().getFullYear();
     for (let i = 0; i < arr.length; i++) {

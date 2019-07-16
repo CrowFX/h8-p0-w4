@@ -27,7 +27,7 @@ function shoppingTime(memberId, money) {
     let purchase = [];
     let moneyChange = -1;
     let totalPurchase = 0;
-    let shopList = [
+    const shopList = [
         ['Sepatu Stacattu', 1500000],
         ['Baju Zoro', 500000],
         ['Baju H&N', 250000],

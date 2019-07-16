@@ -1,6 +1,6 @@
 function naikAngkot(arrPenumpang) {
     if (arrPenumpang.length === 0) {return [];}
-    let rute = ['A', 'B', 'C', 'D', 'E', 'F'];
+    const rute = ['A', 'B', 'C', 'D', 'E', 'F'];
     let placeHolder = {};
     let goFrom;
     let goTo;

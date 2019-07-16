@@ -1,6 +1,6 @@
 function countProfit(shoppers) {
     if (shoppers.length === 0) {return []};
-    let listBarang = [
+    const listBarang = [
         ['Sepatu Stacattu', 1500000, 10],
         ['Baju Zoro', 500000, 2],
         ['Sweater Uniklooh', 175000, 1]
