@@ -2,14 +2,16 @@ function cariModus(arr) {
     let result = [];
     let count = 0;
     let oldHighest = 0;
-    let uniform = true;    
+    let uniform = true;
     for (let i = 0; i < arr.length - 1; i++) {
-        if (arr[i] !== arr[i+1]) {
+        if (arr[i] !== arr[i + 1]) {
             uniform = false;
         }
     }
+    if (uniform === true) {
+        return -1
+    }
     for (let i = 0; i < arr.length; i++) {
-        if (uniform === true) {break;}
         for (let j = i; j < arr.length; j++) {
             if (i !== j && arr[i] === arr[j]) {
                 count++;
@@ -22,9 +24,11 @@ function cariModus(arr) {
         }
         count = 0;
     }
-    if (result.length == 0) {return -1;}
-    else if (uniform === true) {return -1;}
-    else {return result[0];}
+    if (result.length === 0) {
+        return -1;
+    } else {
+        return result[0];
+    }
 }
 
 // TEST CASES
