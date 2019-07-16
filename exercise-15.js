@@ -18,6 +18,7 @@ function highestScore(students) {
             iteration++;
         }
     }
+    //Generate ClassList
     for (let i = 0; i < classList.length; i++) {     
         //List all available classes as keys
         result[classList[i]] = [];                   

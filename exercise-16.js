@@ -3,13 +3,18 @@ function graduates(students) {
     let result = {};
     let placeHolder = {};
     let classList = [];
-    for (let i = 0; i < students.length; i++) { //Gathering all classes list
+    let iteration = 0;
+    //Gather all class list
+    for (let i = 0; i < students.length; i++) {
         classList.push(students[i].class)
     }
-    classList.sort(); // Sort the classList
-    for (let i = 0; i < classList.length; i++) { //Trim all copies in classList
-        if (classList[i] == classList[i-1]) {
-            classList.splice(i, i);
+    // Delete all copies of classList
+    classList.sort();
+    while (iteration < classList.length) {
+        if (classList[iteration] == classList[iteration-1]) {
+            classList.splice(iteration, 1);
+        } else {
+            iteration++;
         }
     }
     for (let i = 0; i < classList.length; i++) {     //Iterate to the length of classList
