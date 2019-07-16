@@ -4,32 +4,43 @@ function highestScore(students) {
     let placeHolder = {};
     let classList = [];
     let scoreList = [];
-    for (let i = 0; i < students.length; i++) { //Gathering all classes list
+    let iteration = 0;
+    //Gather all class list
+    for (let i = 0; i < students.length; i++) {
         classList.push(students[i].class)
     }
-    classList.sort(); // Sort the classList
-    for (let i = 0; i < classList.length; i++) { //Trim all copies in classList
-        if (classList[i] == classList[i-1]) {
-            classList.splice(i, i);
+    // Delete all copies of classList
+    classList.sort();
+    while (iteration < classList.length) {
+        if (classList[iteration] == classList[iteration-1]) {
+            classList.splice(iteration, 1);
+        } else {
+            iteration++;
         }
     }
-    for (let i = 0; i < classList.length; i++) {     //Iterate to the length of classList
-        result[classList[i]] = [];                   //List all available classes
-        placeHolder = {};//Reset placeholder for every class
+    for (let i = 0; i < classList.length; i++) {     
+        //List all available classes as keys
+        result[classList[i]] = [];                   
+        //Reset placeholder for every classes
+        placeHolder = {};
+        //generate scoreList
         scoreList = [];
-        for (let j = 0; j < students.length; j++) { //generate scoreList
+        for (let j = 0; j < students.length; j++) { 
             if (students[j].class === classList[i]) {
                 scoreList.push(students[j].score);
             }
         }
-        scoreList.sort(function sorting(a,b) {return b-a}); //get highest score to first index
-        for (let j = 0; j < students.length; j++) { //compare first index to all students in current class
+        //get highest score to first index
+        scoreList.sort(function sorting(a,b) {return b-a});
+         //compare first index to all students in current class 
+        for (let j = 0; j < students.length; j++) {
             if (scoreList[0] === students[j].score) {
                 placeHolder.name = students[j].name;
                 placeHolder.score = students[j].score;
                 result[classList[i]].push(placeHolder);                            
             }
         }
+        result[classList[i]] = result[classList[i]][0];
     }
     return result;
 }
